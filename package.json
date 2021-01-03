@@ -1,0 +1,31 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js --watch src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felpshn/rest-api.git"
+  },
+  "keywords": [],
+  "author": "felpshn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felpshn/rest-api/issues"
+  },
+  "homepage": "https://github.com/felpshn/rest-api#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9",
+    "yup": "^0.32.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
