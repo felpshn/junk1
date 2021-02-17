@@ -1,33 +1,35 @@
 {
   "name": "rest-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A small RESTful API with JWT authentication mainly built with Node.js, Express and Mongoose.",
+  "main": "index.ts",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js --watch src/",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js --watch dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/felpshn/rest-api.git"
   },
-  "keywords": [],
   "author": "felpshn",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/felpshn/rest-api/issues"
   },
   "homepage": "https://github.com/felpshn/rest-api#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.9",
+    "mongoose": "^5.11.16",
     "yup": "^0.32.8"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "@types/bcrypt": "^3.0.0",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
+    "nodemon": "^2.0.7"
   }
 }
