@@ -1,15 +1,11 @@
-import dotenv from 'dotenv';
-
 import mongoose from 'mongoose';
-
 import express from 'express';
+import routes from './routes/index';
 
-import routes from './api/routes';
-
-dotenv.config();
+import config from './config/index';
 
 mongoose
-  .connect(process.env.DB_ACCESS!, {
+  .connect(config.dbAccess!, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -18,8 +14,8 @@ mongoose
 
 const app = express();
 app.use(express.json());
-app.use('/api/user', routes);
+app.use('/user', routes);
 
-app.listen(3000, () => {
+app.listen(3333, () => {
   console.log('\nServer is running.');
 });
