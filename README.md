@@ -11,7 +11,7 @@ A small RESTful API with JWT authentication mainly built with TypeScript, Node.j
 - [Yup](https://github.com/jquense/yup)
 - [bcrypt](https://github.com/kelektiv/node.bcrypt.js)
 - [dotenv](https://github.com/motdotla/dotenv)
-- [nodemon](https://github.com/remy/nodemon)
+- [ts-node-dev](https://github.com/wclr/ts-node-dev)
 
 ---
 
