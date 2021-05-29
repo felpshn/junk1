@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import express from 'express';
 import routes from './routes/index';
 
-import config from './config/index';
+import config from './config';
 
 mongoose
   .connect(config.dbAccess!, {

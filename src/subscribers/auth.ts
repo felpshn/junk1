@@ -1,7 +1,7 @@
 import { NextFunction, Response } from 'express';
 import jwt from 'jsonwebtoken';
 
-import config from '../config/index';
+import config from '../config';
 
 function validateSession(req: any, res: Response, next: NextFunction) {
   const sessionToken = req.header('user-session-token');

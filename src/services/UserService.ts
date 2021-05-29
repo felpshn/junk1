@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
 import { User, IUser } from '../models/User';
-import config from '../config/index';
+import config from '../config';
 
 export interface IRequest extends Request {
   user: {
